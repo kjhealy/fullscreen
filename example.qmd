@@ -1,0 +1,35 @@
+---
+title: "Fullscreen Example"
+format:
+  revealjs: default
+revealjs-plugins:
+  - fullscreen
+---
+
+```{r}
+#| include: false
+#| message: false
+library(tidyverse)
+```
+
+
+# Defaults
+
+## Here's a default slide
+
+```{r}
+ggplot(mtcars, aes(x = disp, y = mpg)) + 
+  geom_point()
+```
+
+## On the next slide
+
+The same code, but fullscreen
+
+# {fullscreen=true}
+
+
+```{r}
+ggplot(mtcars, aes(x = disp, y = mpg)) + 
+  geom_point()
+```
